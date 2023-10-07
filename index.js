@@ -2,44 +2,35 @@ function into_menu(p_name)
 {
     window.open(p_name)
 }
-// var main_menu = document.getElementsByClassName("grid-container").item(0)
-
-// var item_length = document.getElementsByClassName("grid-item").length
-// for(var i = 0; i<item_length ; i++)
-// {
-//     (function(index) {
-//         var each = main_menu.getElementsByClassName("grid-item").item(index)
-//         each.addEventListener("click", function() {
-//             console.log(index);
-//             // 根据索引值执行相应的代码
-//             if(index == 0)
-//             {
-//                 into_menu("漫评")
-//             }
-//             else if(index == 2)
-//             {
-//                 into_menu("创作者百科")
-//             }
-//             else if(index == 4)
-//             {
-//                 into_menu("经典讨论")
-//             }
-//             else if(index == 6)
-//             {
-//                 into_menu("动漫哲学")
-//             }
-//             else if(index == 7)
-//             {
-//                 into_menu("动漫与天道")
-//             }
-//             else if(index == 9)
-//             {
-//                 into_menu("怀旧")
-//             }
-//         });
-//     })(i);
-// }
-
+var main_menu = document.getElementsByClassName("grid-container").item(0)
+main_menu.children.item(1).addEventListener("click",function()
+{
+    into_menu("文化鱼塘/index.html")
+})
+main_menu.children.item(4).addEventListener("click",function()
+{
+    into_menu("经典讨论/index.html")
+})
+main_menu.children.item(2).addEventListener("click",function()
+{
+    into_menu("创作者百科/index.html")
+})
+main_menu.children.item(6).addEventListener("click",function()
+{
+    into_menu("动漫哲学/index.html")
+})
+main_menu.children.item(7).addEventListener("click",function()
+{
+    into_menu("动漫与天道/index.html")
+})
+main_menu.children.item(7).addEventListener("click",function()
+{
+    into_menu("文创讨论组/index.html")
+})
+main_menu.children.item(9).addEventListener("click",function()
+{
+    into_menu("怀旧/index.html")
+})
 var music_menu = document.getElementsByClassName("grid-container").item(1)
 var music_menu_length = music_menu.children.length
 
@@ -47,7 +38,30 @@ music_menu.children.item(0).addEventListener("click",function()
 {
 
 })
+music_menu.children.item(1).addEventListener("click",function()
+{
+    into_menu("音频区/同人音乐.html")
+})
+
 music_menu.children.item(5).addEventListener("click",function()
 {
     into_menu("音频区/游戏音乐.html")
+})
+music_menu.children.item(6).addEventListener("click",function()
+{
+    into_menu("音频区/高频兴奋音乐.html")
+})
+music_menu.children.item(7).addEventListener("click",function()
+{
+    into_menu("音频区/动漫音乐.html")
+})
+
+var art_menu = document.getElementsByClassName("grid-container").item(2)
+art_menu.children.item(3).addEventListener("click",function()
+{
+    into_menu("动画研究/index.html")
+})
+art_menu.children.item(5).addEventListener("click",function()
+{
+    into_menu("动漫图片收集/index.html")
 })
