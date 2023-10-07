@@ -1,0 +1,12 @@
+.book-cover
+{
+    width: 225px;
+}
+.bangumi
+{
+    display: inline-block;
+}
+.bangumi:hover
+{
+    cursor: pointer;
+}
