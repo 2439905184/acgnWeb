@@ -65,3 +65,8 @@ art_menu.children.item(5).addEventListener("click",function()
 {
     into_menu("动漫图片收集/index.html")
 })
+var video_menu = document.getElementsByClassName("grid-container").item(3)
+video_menu.children.item(0).addEventListener("click",function()
+{
+    into_menu("鬼畜要点.html")
+})
