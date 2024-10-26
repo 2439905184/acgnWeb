@@ -1,4 +1,7 @@
-alert("推荐使用新版主页，点击新版主页跳转")
+//alert("推荐使用新版主页，点击新版主页跳转")
+alert("旧版已禁用，跳转新版主页")
+window.open("new_index.html")
+
 function into_menu(p_name)
 {
     window.open(p_name)
